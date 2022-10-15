@@ -1,0 +1,17 @@
+I first wanted to track all content on the network. I found Scapy's Sniff tool to do that. 
+Given all packets, I only wanted dns content. The "dns" filter was giving me errors so I filter via "port 53" and I was able to view only dns content. 
+I saw that sniff has a prn function that only triggers on matching the filter. So I use that prn function as a gateway to call my injection function. 
+At first, I looked at the format of the requests by using "ls(pkt)".
+I noticed that the srcport and TXID were there in plain text. 
+Once I realized I had all that information I realized I just needed to forge a packet the same way I did in HW1. 
+I realized then I had an issue where I was sending too many packets because I was sending a spoof to the resolution of my own request. 
+Hence I filter via the qr bit because I only need to respond to queuries not responses.
+After that, I compared my spoofed resolution vs the actual resolution for cs.uic.edu and tried to match accordingly. 
+I tested this via using the dig utility. I would run my python dnsinject.py -h hostnames.txt. Then do dig *url* and then i'd see my ip. 
+Then I exited my python program and did another dig *url* to see the different IP's.
+
+References: 
+
+DNS-primer.pdf 
+https://scapy.readthedocs.io/en/latest/api/scapy.layers.dns.html?highlight=dns
+https://scapy.readthedocs.io/en/latest/api/scapy.config.html?highlight=sniff

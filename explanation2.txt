@@ -1,0 +1,17 @@
+Idea:   there are a lot of ports 
+        there are a lot of potential txid 
+        have a (dstPort, srcPort, txid) => None | ip   
+            
+        if we've already seen a ip at that specific permutation then someone sent a spoofed packet because the likelyhood of 2 dns requests with the same mapping is so small.
+        if none -> save packet info for later
+
+        because there are so many ports x ports x txid permutations, collisions are very unlikely. 
+
+Test: 
+
+        1. Run dnsinjection.py 
+        2. Run dnsdetect.py 
+        3. In linux terminal, dig a specified spoofed url
+
+Resources:
+    https://www.programiz.com/python-programming/datetime/strftime

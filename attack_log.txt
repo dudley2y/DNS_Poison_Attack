@@ -1,0 +1,45 @@
+-Apr 25 2022 14:32:21
+-TXID 9383 Request ssl.gstatic.com.
+Answer 1: 142.250.190.3
+Answer 2: 10.107.212.154
+
+-Apr 25 2022 14:32:21
+-TXID 54617 Request safebrowsing.googleapis.com.
+Answer 1: 142.250.191.138
+Answer 2: 10.107.212.154
+
+-Apr 25 2022 14:32:21
+-TXID 23628 Request peoplestack-pa.clients6.google.com.
+Answer 1: 10.107.212.154
+Answer 2: 142.250.190.138
+
+-Apr 25 2022 14:32:21
+-TXID 35389 Request vortex.data.microsoft.com.
+Answer 1: 10.107.212.154
+Answer 2: b'asimov.vortex.data.trafficmanager.net.'
+
+-Apr 25 2022 14:32:21
+-TXID 49059 Request play.google.com.
+Answer 1: 10.107.212.154
+Answer 2: 142.250.191.142
+
+-Apr 25 2022 14:32:21
+-TXID 48218 Request foo.example.com.
+Answer 1: 10.107.212.154
+Answer 2: None
+
+-Apr 25 2022 14:32:40
+-TXID 36097 Request signaler-pa.clients6.google.com.
+Answer 1: 10.107.212.154
+Answer 2: 142.250.191.234
+
+-Apr 25 2022 14:32:40
+-TXID 21756 Request slack-imgs.com.
+Answer 1: 13.226.17.97
+Answer 2: 10.107.212.154
+
+-Apr 25 2022 14:32:40
+-TXID 23344 Request foo.example.com.
+Answer 1: None
+Answer 2: 10.107.212.154
+

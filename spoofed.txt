@@ -1,0 +1,5 @@
+The actual request had a don't fragment bit set. 
+The TTL's are different (56 vs 64). 
+The actual DNS result had an additional RR. 
+The Additional Record talks about Root.
+The actual DNS on wireshark notes that the packet is a retransmitted response. 
